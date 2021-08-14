@@ -4,11 +4,13 @@ services:
   mysql:
     image: mysql:8.0
     environment:
-      - MYSQL_DATABASE=dev
+      - MYSQL_DATABASE=tpch
       - MYSQL_USER=admin
       - MYSQL_PASSWORD=1234
-      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
     volumes:
       - ./db:/var/lib/mysql
+      - ./tpch:/tmp
     ports:
       - 3306:3306
+    command: --secure-file-priv="/tmp/" --local-infile=1
