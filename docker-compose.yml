@@ -13,4 +13,4 @@ services:
       - ./tpch:/tmp
     ports:
       - 3306:3306
-    command: --secure-file-priv="/tmp/" --local-infile=1
+    command: --secure-file-priv="/tmp/" --local-infile=1 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci

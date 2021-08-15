@@ -1,0 +1,39 @@
+LOAD DATA INFILE '/tmp/nation.tbl'
+INTO TABLE tpch.nation
+FIELDS TERMINATED BY '|'
+LINES TERMINATED BY '\n';
+
+LOAD DATA INFILE '/tmp/region.tbl'
+INTO TABLE tpch.region
+FIELDS TERMINATED BY '|'
+LINES TERMINATED BY '\n';
+
+LOAD DATA INFILE '/tmp/part.tbl'
+INTO TABLE tpch.part
+FIELDS TERMINATED BY '|'
+LINES TERMINATED BY '\n';
+
+LOAD DATA INFILE '/tmp/supplier.tbl'
+INTO TABLE tpch.supplier
+FIELDS TERMINATED BY '|'
+LINES TERMINATED BY '\n';
+
+LOAD DATA INFILE '/tmp/partsupp.tbl'
+INTO TABLE tpch.partsupp
+FIELDS TERMINATED BY '|'
+LINES TERMINATED BY '\n';
+
+LOAD DATA INFILE '/tmp/customer.tbl'
+INTO TABLE tpch.customer
+FIELDS TERMINATED BY '|'
+LINES TERMINATED BY '\n';
+
+LOAD DATA INFILE '/tmp/orders.tbl'
+INTO TABLE tpch.orders
+FIELDS TERMINATED BY '|'
+LINES TERMINATED BY '\n';
+
+LOAD DATA INFILE '/tmp/lineitem.tbl'
+INTO TABLE tpch.lineitem
+FIELDS TERMINATED BY '|'
+LINES TERMINATED BY '\n';
